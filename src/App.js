@@ -2,7 +2,7 @@
 import './App.css';
 import Home from './Component/Home';
 import Navbar from './Component/Navbar';
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import {HashRouter , Route, Switch} from 'react-router-dom'
 
 import Register from './Component/Register';
 import Login from './Component/Login';
@@ -12,7 +12,7 @@ import Homepage from './Component/Home';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter >
       <div className="App">
         {/* <Navbar/> */}
       
@@ -31,7 +31,7 @@ function App() {
       
       </div>
 
-    </BrowserRouter>
+    </HashRouter >
   );
 }
 
