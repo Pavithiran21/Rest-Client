@@ -190,7 +190,7 @@ export default class Reset extends React.Component{
                 <div className="auth-wrapper">
                     <div className="auth-inner">
                        <p className="pt-3"><b>Invalid Link please try again later</b></p>
-                      <p className="pt-3"> <a href="/forgot">Click here</a> to resend an mail</p> 
+                      <p className="pt-3"> <a href="#/forgot">Click here</a> to resend an mail</p> 
                     </div>
                 </div>
             )
