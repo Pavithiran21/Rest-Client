@@ -110,7 +110,7 @@ export default class Forget extends React.Component{
                     <div className="auth-inner">
                        <h3> Forgot Password </h3>
                        <p className="pt-3">An Email has sent to <span className="font-weight-800">{this.state.message}</span></p>
-                      <p>Not yet recieved Please <a href="/forgot">Click here</a> to send an mail</p> 
+                      <p>Not yet recieved Please <a href="#/forgot">Click here</a> to send an mail</p> 
                     </div>
                 </div>
             )
