@@ -67,6 +67,7 @@ export default class Reset extends React.Component{
                  this.setState({update:true})
                  this.setState({error:false})
                  this.render()
+                 this.props.history.push('/')
               }
               else{
                 this.setState({disable:false})
@@ -109,7 +110,7 @@ export default class Reset extends React.Component{
                      isLoading:false,
                      error:false
                     })
-                    this.props.history.push('/')
+                 
                 
                 
               }
