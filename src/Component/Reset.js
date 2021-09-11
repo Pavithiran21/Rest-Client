@@ -109,6 +109,7 @@ export default class Reset extends React.Component{
                      isLoading:false,
                      error:false
                     })
+                    this.props.history.push('/')
                 
                 
               }
