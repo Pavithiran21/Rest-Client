@@ -100,7 +100,7 @@ export default class Register extends React.Component {
                             this.setState({ message: response.data.message })
                             this.setState({ update: true })
                             this.setState({ error: false })
-                            this.render()
+                            this.props.history.push('/')
                         }
                         else {
                             this.setState({ update: false })
@@ -155,7 +155,7 @@ export default class Register extends React.Component {
 
                                         <button disabled={this.state.disable} className="btn btn-primary btn-block mt-3">{this.state.text}</button>
 
-                                        <p className="mt-2 pl-3">Already Registered <a href="/login">Click here to Login </a></p>
+                                        <p className="mt-2 pl-3">Already Registered <a href="/">Click here to Login </a></p>
 
                                     </Form>
                                 )
