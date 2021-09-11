@@ -97,7 +97,7 @@ export default class Reset extends React.Component{
     async componentDidMount(){
         console.log(this.props.match.params)
         this.setState({user_id:this.props.match.params.id})
-        const URL=API_URL +"/checkid/"+window.location.pathname.split('/')[2]
+        const URL=API_URL +"/checkid/"+this.props.match.params.id
         return axios.get(URL)
         .then((response) =>{
             console.log(response)
